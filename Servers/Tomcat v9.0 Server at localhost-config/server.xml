@@ -17,7 +17,11 @@
 --><!-- Note:  A "Server" is not itself a "Container", so you may not
      define subcomponents such as "Valves" at this level.
      Documentation at /docs/config/server.html
+<<<<<<< HEAD
  --><Server port="9000" shutdown="SHUTDOWN">
+=======
+ --><Server port="9001" shutdown="SHUTDOWN">
+>>>>>>> 53392aa12dd6d0f2d11162f8d40c82a7b2437a35
   <Listener className="org.apache.catalina.startup.VersionLoggerListener"/>
   <!-- Security listener. Documentation at /docs/config/listeners.html
   <Listener className="org.apache.catalina.security.SecurityListener" />
@@ -60,7 +64,11 @@
          APR (HTTP/AJP) Connector: /docs/apr.html
          Define a non-SSL/TLS HTTP/1.1 Connector on port 8080
     -->
+<<<<<<< HEAD
     <Connector connectionTimeout="20000" port="9090" protocol="HTTP/1.1" redirectPort="8443"/>
+=======
+    <Connector connectionTimeout="20000" port="9191" protocol="HTTP/1.1" redirectPort="8443"/>
+>>>>>>> 53392aa12dd6d0f2d11162f8d40c82a7b2437a35
     <!-- A "Connector" using the shared thread pool-->
     <!--
     <Connector executor="tomcatThreadPool"
@@ -153,7 +161,11 @@
              Note: The pattern used is equivalent to using pattern="common" -->
         <Valve className="org.apache.catalina.valves.AccessLogValve" directory="logs" pattern="%h %l %u %t &quot;%r&quot; %s %b" prefix="localhost_access_log" suffix=".txt"/>
 
+<<<<<<< HEAD
       <Context docBase="JspEl" path="/JspEl" reloadable="true" source="org.eclipse.jst.jee.server:JspEl"/></Host>
+=======
+      <Context docBase="RequestDispatchServlet" path="/RequestDispatchServlet" reloadable="true" source="org.eclipse.jst.jee.server:RequestDispatchServlet"/><Context docBase="EmpStu" path="/EmpStu" reloadable="true" source="org.eclipse.jst.jee.server:EmpStu"/><Context docBase="CookieDemo" path="/CookieDemo" reloadable="true" source="org.eclipse.jst.jee.server:CookieDemo"/><Context docBase="DBConn" path="/DBConn" reloadable="true" source="org.eclipse.jst.jee.server:DBConn"/><Context docBase="CookieLoginout" path="/CookieLoginout" reloadable="true" source="org.eclipse.jst.jee.server:CookieLoginout"/><Context docBase="UrlRewrite" path="/UrlRewrite" reloadable="true" source="org.eclipse.jst.jee.server:UrlRewrite"/><Context docBase="HiddenFormField" path="/HiddenFormField" reloadable="true" source="org.eclipse.jst.jee.server:HiddenFormField"/><Context docBase="HttpSession" path="/HttpSession" reloadable="true" source="org.eclipse.jst.jee.server:HttpSession"/><Context docBase="HttpSessionLoginout" path="/HttpSessionLoginout" reloadable="true" source="org.eclipse.jst.jee.server:HttpSessionLoginout"/><Context docBase="FilterApp" path="/FilterApp" reloadable="true" source="org.eclipse.jst.jee.server:FilterApp"/><Context docBase="FilterAuth" path="/FilterAuth" reloadable="true" source="org.eclipse.jst.jee.server:FilterAuth"/></Host>
+>>>>>>> 53392aa12dd6d0f2d11162f8d40c82a7b2437a35
     </Engine>
   </Service>
 </Server>
